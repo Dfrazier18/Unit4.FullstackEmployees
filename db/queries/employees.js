@@ -56,7 +56,7 @@ export async function updateEmployee({ id, name, birthday, salary }) {
   UPDATE employees
   SET
     name = $2,
-    birtday = $3,
+    birthday = $3,
     salary = $4
   WHERE id = $1
   RETURNING *
